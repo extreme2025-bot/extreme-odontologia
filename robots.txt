@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://extreme2025-bot.github.io/extreme-odontologia/sitemap.xml
