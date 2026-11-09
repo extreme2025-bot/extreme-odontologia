@@ -1,6 +1,6 @@
 # Extreme Odontologia — site e campanha Google Ads
 
-_Atualizado em 09/11/2026 (madrugada). Fonte: trabalho feito na sessão com Rafael; itens marcados **[validado]** foram conferidos na fonte; **[pendente]** depende de ação do Rafael._
+_Atualizado em 09/11/2026, 06:40. Fonte: trabalho feito na sessão com Rafael; itens marcados **[validado]** foram conferidos na fonte; **[pendente]** depende de ação do Rafael._
 
 ## Identidade e dados oficiais **[validado no cartão CNPJ e no Instagram]**
 - Razão social: EXTREME ODONTOLOGIA LTDA · CNPJ 54.410.614/0001-70 · aberta em 20/03/2024 · EPP · CNAE 86.30-5-04
@@ -18,7 +18,7 @@ _Atualizado em 09/11/2026 (madrugada). Fonte: trabalho feito na sessão com Rafa
 - Rodapé legal em todas as páginas: razão social, CNPJ, RT com CRO, aviso "informativo, não substitui avaliação". Sem preços (vedado pelo CEO, art. 44).
 - **Domínio próprio: extremeodonto.com.br** **[validado]** — registrado no Registro.br em 08/11/2026 (ticket 32589910), titular Rafael (CPF), 5 anos, vence **08/11/2031**, R$ 184 (Pix). DNS hospedado no próprio Registro.br (modo avançado): 4 registros A → 185.199.108/109/110/111.153 (GitHub Pages) e CNAME `www` → extreme2025-bot.github.io. Publicação da zona pelo Registro.br levou ~3 h (saída ~01:30 de 09/11). Arquivo `CNAME` no repositório fixa o domínio no Pages; `build.py` já usa o novo domínio por padrão.
 - extremeodontologia.com.br (nome completo) estava em processo de liberação no Registro.br — opcional tentar depois, só por proteção de marca.
-- **[pendente – depende do Chrome do Rafael]** marcar "Enforce HTTPS" em github.com/extreme2025-bot/extreme-odontologia/settings/pages (hoje https funciona, mas http não é forçado a redirecionar); e trocar as URLs finais no Google Ads (4 anúncios, 4 sitelinks, promoção) de github.io para extremeodonto.com.br — enquanto isso os cliques seguem funcionando via redirecionamento 301.
+- 09/11 06:30 **[validado]**: "Enforce HTTPS" ativado no GitHub Pages (http:// e www redirecionam 301 para https://extremeodonto.com.br/). URLs finais no Google Ads trocadas para o domínio novo: 4 anúncios (edição em lote "Localizar e substituir" em URL final), 4 sitelinks e a promoção — todos voltaram para "Em análise". Obs.: antes da troca o anúncio de Clareamento tinha sido reprovado por "Destino não correspondente" (o github.io passou a redirecionar para outro domínio); a troca da URL resolveu o motivo — conferir se a aprovação sai antes de 10/11.
 
 ## Promoção vigente
 - "Presente de fim de ano": 10% na primeira visita em limpeza, clareamento ou tratamento de canal, até 31/12/2026. Comunicada como percentual, sem valores em reais. Sem brinde, sorteio ou vale (vedados).
@@ -47,5 +47,5 @@ _Atualizado em 09/11/2026 (madrugada). Fonte: trabalho feito na sessão com Rafa
 1. **Registro da PJ no CRO-MT não localizado** — fiscalização pode autuar a clínica e a RT. Confirmar com a Dra. Luana/contador; se não houver, registrar a empresa no CRO-MT antes de escalar mídia.
 2. **Verificação do anunciante no Google Ads** (prazo de 30 dias após o aviso) — se não concluída, a conta inteira pausa (Altezza inclusa).
 3. **Verificação do Perfil da Empresa no Google (Maps)** — chamado aberto por Rafael; não bloqueia o Ads.
-4. **Domínio próprio** — feito (extremeodonto.com.br); faltam Enforce HTTPS e troca das URLs no Ads — ver acima. Renovação em 2031, no CPF do Rafael (conta Registro.br RMAOL25).
+4. **Domínio próprio** — concluído em 09/11 (extremeodonto.com.br, HTTPS forçado, Ads apontando para o domínio novo). Renovação em 08/11/2031, no CPF do Rafael (conta Registro.br RMAOL25).
 5. Opcional: rastrear cliques no WhatsApp como conversão (tag no site) para otimizar depois.
