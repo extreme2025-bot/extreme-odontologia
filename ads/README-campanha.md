@@ -1,6 +1,6 @@
 # Extreme Odontologia — site e campanha Google Ads
 
-_Atualizado em 09/11/2026, 06:40. Fonte: trabalho feito na sessão com Rafael; itens marcados **[validado]** foram conferidos na fonte; **[pendente]** depende de ação do Rafael._
+_Atualizado em 09/11/2026, 07:30. Fonte: trabalho feito na sessão com Rafael; itens marcados **[validado]** foram conferidos na fonte; **[pendente]** depende de ação do Rafael._
 
 ## Identidade e dados oficiais **[validado no cartão CNPJ e no Instagram]**
 - Razão social: EXTREME ODONTOLOGIA LTDA · CNPJ 54.410.614/0001-70 · aberta em 20/03/2024 · EPP · CNAE 86.30-5-04
@@ -10,15 +10,15 @@ _Atualizado em 09/11/2026, 06:40. Fonte: trabalho feito na sessão com Rafael; i
 - Inscrição de pessoa jurídica no CRO-MT: **não localizada** na busca pública do CFO (0 resultados para "EXTREME ODONTOLOGIA" em MT). **[pendente]** confirmar/regularizar — ver riscos.
 
 ## Site institucional (GitHub Pages) **[validado – no ar]**
-- URL: **https://extremeodonto.com.br/** (desde 09/11/2026; `www` redireciona para o domínio raiz; o endereço antigo extreme2025-bot.github.io/extreme-odontologia/ redireciona 301 para o novo).
+- URL: **https://www.extremeodonto.com.br/** (desde 09/11/2026, a pedido do Rafael o endereço principal é com `www`; `extremeodonto.com.br` sem www redireciona 301 para o www; http → https forçado; o endereço antigo extreme2025-bot.github.io/extreme-odontologia/ redireciona para o novo).
 - Repositório: github.com/extreme2025-bot/extreme-odontologia (branch `main`, raiz, `.nojekyll`); gerador `build.py` (Python) no próprio repo.
 - Páginas: Home · Tratamentos (índice + Limpeza, Clareamento, Canal) · Dúvidas (12 FAQs) · Artigos (3) · Contato (mapa, WhatsApp, Instagram, horários) · 404 · sitemap.xml · robots.txt.
 - SEO: títulos/descrições por página, JSON-LD `Dentist` (endereço, geo, horários, telefone, RT), `FAQPage` e `Article`, Open Graph, embeds do Instagram e do Google Maps.
 - Identidade visual: verde-escuro + dourado (do logo do Instagram), fontes Cormorant Garamond + Inter. Imagens: capturas de posts institucionais do Instagram (Rafael pode enviar fotos originais/logo em alta para substituir).
 - Rodapé legal em todas as páginas: razão social, CNPJ, RT com CRO, aviso "informativo, não substitui avaliação". Sem preços (vedado pelo CEO, art. 44).
-- **Domínio próprio: extremeodonto.com.br** **[validado]** — registrado no Registro.br em 08/11/2026 (ticket 32589910), titular Rafael (CPF), 5 anos, vence **08/11/2031**, R$ 184 (Pix). DNS hospedado no próprio Registro.br (modo avançado): 4 registros A → 185.199.108/109/110/111.153 (GitHub Pages) e CNAME `www` → extreme2025-bot.github.io. Publicação da zona pelo Registro.br levou ~3 h (saída ~01:30 de 09/11). Arquivo `CNAME` no repositório fixa o domínio no Pages; `build.py` já usa o novo domínio por padrão.
+- **Domínio próprio: extremeodonto.com.br** **[validado]** — registrado no Registro.br em 08/11/2026 (ticket 32589910), titular Rafael (CPF), 5 anos, vence **08/11/2031**, R$ 184 (Pix). DNS hospedado no próprio Registro.br (modo avançado): 4 registros A → 185.199.108/109/110/111.153 (GitHub Pages) e CNAME `www` → extreme2025-bot.github.io. Publicação da zona pelo Registro.br levou ~3 h (saída ~01:30 de 09/11). Arquivo `CNAME` no repositório = `www.extremeodonto.com.br` (GitHub Pages redireciona o apex para o www automaticamente); `build.py` usa https://www.extremeodonto.com.br por padrão (canônicas, sitemap, robots, JSON-LD).
 - extremeodontologia.com.br (nome completo) estava em processo de liberação no Registro.br — opcional tentar depois, só por proteção de marca.
-- 09/11 06:30 **[validado]**: "Enforce HTTPS" ativado no GitHub Pages (http:// e www redirecionam 301 para https://extremeodonto.com.br/). URLs finais no Google Ads trocadas para o domínio novo: 4 anúncios (edição em lote "Localizar e substituir" em URL final), 4 sitelinks e a promoção — todos voltaram para "Em análise". Obs.: antes da troca o anúncio de Clareamento tinha sido reprovado por "Destino não correspondente" (o github.io passou a redirecionar para outro domínio); a troca da URL resolveu o motivo — conferir se a aprovação sai antes de 10/11.
+- 09/11 06:30–07:30 **[validado]**: "Enforce HTTPS" ativo no GitHub Pages. URLs finais no Google Ads apontando para **https://www.extremeodonto.com.br/…**: 4 anúncios (edição em lote "Localizar e substituir" em URL final), 4 sitelinks e a promoção — reenviados para análise. Ocorrência: o anúncio de **Clareamento** foi reprovado por "Destino não correspondente" porque o robô do Google visitou a página durante a troca de endereço (redirecionamento transitório); página conferida estável (AdsBot → 200 direto no www); contestação aberta pelo Rafael em 09/11 (motivo: alterações feitas para obedecer à política). **[pendente]** confirmar aprovação do anúncio de Clareamento antes/depois de 10/11; se negar de novo, editar e salvar o anúncio para forçar nova revisão.
 
 ## Promoção vigente
 - "Presente de fim de ano": 10% na primeira visita em limpeza, clareamento ou tratamento de canal, até 31/12/2026. Comunicada como percentual, sem valores em reais. Sem brinde, sorteio ou vale (vedados).
