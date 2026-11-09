@@ -2,7 +2,7 @@
 """Gera o site estático da Extreme Odontologia em ./site"""
 import os, html, json, datetime, shutil
 
-SITE_URL = os.environ.get("SITE_URL", "https://extremeodonto.com.br")
+SITE_URL = os.environ.get("SITE_URL", "https://www.extremeodonto.com.br")
 CRO_PJ = os.environ.get("CRO_PJ", "").strip()  # ex.: "CRO-MT-CLM-1234" (inserir quando o Rafael confirmar)
 WHATS = "5566996641307"
 WHATS_FMT = "(66) 99664-1307"
