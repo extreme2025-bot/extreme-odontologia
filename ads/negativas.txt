@@ -1,0 +1,68 @@
+# Palavras-chave negativas — campanha "Extreme Odonto | Pesquisa Local Sinop" (ID 24441119250)
+# Nível: campanha. Sem aspas = correspondência ampla negativa; com aspas = frase.
+# Adicionadas em 08/11/2026 (65 termos).
+curso
+cursos
+faculdade
+estágio
+concurso
+vaga
+vagas
+emprego
+currículo
+popular
+barato
+"mais barato"
+grátis
+gratis
+gratuito
+"de graça"
+sus
+unimed
+bradesco
+amil
+odontoprev
+"plano odontológico"
+"plano odontologico"
+convênio
+convenio
+"24 horas"
+plantão
+plantao
+madrugada
+"como fazer"
+receita
+bicarbonato
+carvão
+"água oxigenada"
+gel
+kit
+fita
+caneta
+"quanto custa"
+preço
+preços
+preco
+precos
+valor
+valores
+"antes e depois"
+infantil
+criança
+crianças
+odontopediatra
+odontopediatria
+aparelho
+ortodontia
+invisalign
+cuiabá
+cuiaba
+"lucas do rio verde"
+"em sorriso"
+"sorriso mt"
+"nova mutum"
+"odonto vitta"
+"luz e vida"
+rident
+"karoline evas"
+"dentista popular"
