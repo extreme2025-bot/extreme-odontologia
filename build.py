@@ -315,7 +315,7 @@ def page_index():
     <p>Na Extreme Odontologia cada atendimento é conduzido pela Dra. Luana Alves com planejamento, responsabilidade e respeito à história de cada paciente. Nada é feito sem que você entenda o porquê.</p>
     <ul class="list"><li>Planejamento digital e prova do resultado (mock-up) nos casos estéticos</li><li>Materiais e protocolos atuais, com biossegurança rigorosa</li><li>Ambiente reservado, silencioso e confortável — consulta com hora marcada</li><li>Orçamento claro e etapas definidas antes de começar</li></ul>
     <a class="btn btn-gold" href="{WA_DEFAULT}" target="_blank" rel="noopener">{WA_SVG} Falar com a clínica</a></div>
-  <div><img src="{root}img/ambiente.jpg" alt="Recepção da Extreme Odontologia, com o logotipo dourado na parede verde" loading="lazy" width="760" height="994" style="aspect-ratio:4/5;object-fit:cover"></div>
+  <div><img src="{root}img/ambiente.jpg?v=2" alt="Recepção da Extreme Odontologia em Sinop, com o logotipo dourado na parede verde" loading="lazy" width="960" height="1200" style="aspect-ratio:4/5;object-fit:cover"></div>
 </div></section>
 <section><div class="wrap">
   <div class="sec-head center"><div class="eyebrow">Como funciona</div><h2>Sua primeira visita, passo a passo</h2></div>
