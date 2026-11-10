@@ -449,6 +449,94 @@ ARTIGOS = [
 <p>Qualquer tratamento estético começa com gengiva saudável e dentes sem placa: o clareamento age melhor, as facetas adaptam com precisão e o resultado dura mais.</p>
 <div class="note">Conteúdo informativo. A frequência ideal de limpeza é definida individualmente, após avaliação.</div>
 """),
+    dict(slug="clareamento-dental-caseiro-ou-consultorio", titulo="Clareamento dental caseiro ou em consultório: qual a diferença e qual escolher", data="2026-11-10", tempo="5 min",
+         desc="Clareamento dental caseiro supervisionado, clareamento em consultório, fitas e receitas da internet: o que muda entre eles e como a dentista indica cada um.",
+         corpo="""
+<p>“Clareamento dental caseiro” é uma das buscas mais feitas sobre o assunto — e o termo mistura coisas muito diferentes: o tratamento caseiro supervisionado pela dentista, os produtos de prateleira e as receitas da internet. Vale separar cada um.</p>
+<h2>Clareamento caseiro supervisionado</h2>
+<p>É um tratamento odontológico feito em casa. A dentista avalia a boca, faz moldeiras sob medida e entrega seringas de gel clareador em concentração baixa, com orientação de quanto usar e por quanto tempo. A cor muda de forma gradual, ao longo de alguns dias ou semanas, com retornos para acompanhamento.</p>
+<h2>Clareamento dental em consultório</h2>
+<p>O gel tem concentração mais alta e por isso só é aplicado pela profissional, com a gengiva protegida por uma barreira. O resultado aparece mais rápido, em sessões controladas. É a opção de quem tem pouco tempo ou não se adapta ao uso diário da moldeira.</p>
+<h2>Os dois combinados</h2>
+<p>Em muitos casos a indicação é associar as técnicas: sessões no consultório para ganhar velocidade e o gel em casa para estabilizar a cor. Quem define é a avaliação, não a preferência por um método.</p>
+<h2>E as fitas, kits e cremes dentais clareadores?</h2>
+<ul><li><b>Cremes dentais “clareadores”</b> atuam sobre manchas superficiais; não mudam a cor interna do dente.</li><li><b>Fitas e kits vendidos sem avaliação</b> usam moldes genéricos: o gel escapa para a gengiva com facilidade e não há quem ajuste o uso se surgir sensibilidade.</li><li><b>Receitas caseiras</b> com bicarbonato, limão, carvão ou água oxigenada são abrasivas ou ácidas: desgastam o esmalte, que não se regenera.</li></ul>
+<blockquote>O que torna o clareamento caseiro seguro não é o gel: é a avaliação antes e o acompanhamento durante.</blockquote>
+<h2>Como a dentista escolhe a técnica</h2>
+<ul><li>Sensibilidade prévia e retrações de gengiva.</li><li>Presença de cáries, restaurações e próteses nos dentes da frente (elas não clareiam).</li><li>Tipo e origem do escurecimento.</li><li>Rotina do paciente e prazo desejado.</li></ul>
+<p>Em Sinop, a avaliação para clareamento dental na Extreme Odontologia é feita no Jardim Botânico, com hora marcada. Veja também <a href="clareamento-dental-como-funciona.html">como o clareamento funciona e quanto tempo dura</a>.</p>
+<div class="note">Conteúdo informativo. A indicação da técnica de clareamento depende de avaliação clínica individual.</div>
+"""),
+    dict(slug="quanto-custa-clareamento-dental", titulo="Quanto custa um clareamento dental? O que define o valor", data="2026-11-10", tempo="4 min",
+         desc="O valor do clareamento dental varia conforme a técnica, o número de sessões e o que a boca precisa antes. Entenda o que entra no orçamento e como comparar.",
+         corpo="""
+<p>“Quanto custa um clareamento dental” e “clareamento dental valor” estão entre as perguntas mais buscadas no Google sobre o tema. A resposta honesta é que não existe um preço único — e entender por quê ajuda a comparar orçamentos com segurança.</p>
+<h2>Por que este artigo não traz uma tabela de preços</h2>
+<p>O Código de Ética Odontológica não permite a divulgação de preços de procedimentos em publicidade. Além disso, um valor sem avaliação diria pouco: dois clareamentos com o mesmo nome podem ser tratamentos bem diferentes.</p>
+<h2>O que define o valor de um clareamento</h2>
+<ul><li><b>Técnica indicada:</b> caseiro supervisionado, consultório ou a combinação dos dois.</li><li><b>Número de sessões</b> ou tempo de uso do gel, que depende do tom inicial e da resposta do dente.</li><li><b>Materiais:</b> moldeiras sob medida, tipo e concentração do gel, barreira de proteção da gengiva.</li><li><b>Preparo prévio:</b> limpeza profissional e tratamento de cáries ou gengivite, quando necessários.</li><li><b>Controle de sensibilidade:</b> dessensibilizantes e ajustes de protocolo.</li><li><b>Acompanhamento:</b> consultas de retorno durante e depois do tratamento.</li></ul>
+<h2>O que pode ficar de fora do orçamento</h2>
+<p>Restaurações e próteses não clareiam. Se houver alguma visível no sorriso, pode ser preciso trocá-la depois para igualar a cor — e isso costuma ser orçado à parte. Pergunte antes.</p>
+<blockquote>Compare o que está incluído, não apenas o número final.</blockquote>
+<h2>Perguntas para fazer antes de fechar</h2>
+<ol><li>A avaliação inclui exame da gengiva e das restaurações?</li><li>Quantas sessões ou dias de uso estão previstos?</li><li>O que acontece se eu tiver sensibilidade?</li><li>Há retorno de acompanhamento incluído?</li><li>Quem aplica o gel e quem responde tecnicamente pelo tratamento?</li></ol>
+<p>Na Extreme Odontologia, em Sinop, o orçamento é apresentado depois da avaliação, com o protocolo explicado. Entenda antes a diferença entre <a href="clareamento-dental-caseiro-ou-consultorio.html">clareamento caseiro e em consultório</a>.</p>
+<div class="note">Conteúdo informativo. Valores e protocolos são definidos individualmente, após avaliação clínica.</div>
+"""),
+    dict(slug="limpeza-dental-doi-clareia-os-dentes", titulo="Limpeza dental dói? Clareia os dentes? Respostas diretas", data="2026-11-10", tempo="4 min",
+         desc="Limpeza dental com ultrassom dói? Clareia os dentes? Quanto tempo leva e o que define o valor? As dúvidas mais buscadas sobre profilaxia, respondidas.",
+         corpo="""
+<p>A limpeza dental (profilaxia) é o procedimento mais comum do consultório e, mesmo assim, cercado de dúvidas. Estas são as mais buscadas.</p>
+<h2>Limpeza dental dói?</h2>
+<p>Para a maioria das pessoas, não. O que se sente é vibração, água e pressão. Pode haver desconforto em quem está com a gengiva inflamada, tem muito tártaro abaixo da gengiva ou dentes sensíveis — e, nesses casos, a dentista pode usar anestésico. Gengiva que sangra na limpeza é sinal de inflamação, e ela melhora depois que o tártaro sai.</p>
+<h2>Limpeza dental clareia os dentes?</h2>
+<p>Ela remove tártaro e manchas superficiais de café, chá e cigarro, e por isso os dentes costumam parecer mais claros. Mas a limpeza não muda a cor interna do dente: isso é papel do <a href="clareamento-dental-como-funciona.html">clareamento dental</a>. Os dois se complementam — o clareamento é feito sobre dentes limpos.</p>
+<h2>Como é a limpeza com ultrassom?</h2>
+<p>Uma ponta metálica vibra em alta frequência, com irrigação de água, e solta o tártaro sem desgastar o esmalte. Depois vêm os instrumentos manuais nos pontos finos, o jato ou a pasta de polimento e a orientação de higiene.</p>
+<h2>Quanto tempo leva?</h2>
+<p>Em geral, uma consulta. Quando há muito tártaro ou doença periodontal, o tratamento pode ser dividido em mais sessões (raspagem).</p>
+<h2>O que define o valor de uma limpeza dental?</h2>
+<p>A quantidade de tártaro, a necessidade de raspagem abaixo da gengiva, o número de sessões e os exames associados. Por norma ética, clínicas odontológicas não divulgam preços em publicidade; o orçamento é dado após a avaliação.</p>
+<blockquote>A limpeza não “enfraquece” nem “afasta” os dentes: o espaço que aparece era ocupado pelo tártaro.</blockquote>
+<p>Procurando limpeza dental em Sinop? A Extreme Odontologia atende com hora marcada no Jardim Botânico. Veja também <a href="limpeza-dental-a-cada-6-meses.html">por que repetir a limpeza a cada 6 meses</a>.</p>
+<div class="note">Conteúdo informativo. A necessidade de anestesia, raspagem e o número de sessões são definidos na avaliação.</div>
+"""),
+    dict(slug="tratamento-de-canal-quanto-tempo-demora", titulo="Tratamento de canal: quanto tempo demora e o que define o valor", data="2026-11-10", tempo="4 min",
+         desc="Quantas sessões tem um tratamento de canal, quanto tempo dura cada consulta e o que influencia o valor: dente, número de canais, retratamento e restauração final.",
+         corpo="""
+<p>Depois de “dói?”, as duas perguntas mais buscadas sobre tratamento de canal são quanto tempo demora e quanto custa. As duas respostas dependem do mesmo ponto: a anatomia e a situação do dente.</p>
+<h2>Quanto tempo demora um tratamento de canal</h2>
+<p>Muitos casos são resolvidos em uma ou duas consultas. O que muda o tempo:</p>
+<ul><li><b>O dente:</b> dentes da frente costumam ter um canal; molares têm três ou mais, e levam mais tempo.</li><li><b>Infecção:</b> com abscesso ou infecção extensa, pode ser indicada medicação dentro do canal entre as sessões.</li><li><b>Anatomia:</b> canais curvos, estreitos ou calcificados exigem mais cuidado.</li><li><b>Retratamento:</b> refazer um canal antigo é mais demorado que o primeiro tratamento.</li></ul>
+<h2>O tratamento só termina com a restauração</h2>
+<p>Depois de selados os canais, o dente precisa da restauração definitiva — em alguns casos, uma coroa. Sem ela, o dente fica frágil e pode fraturar. Conte esse passo no prazo e no orçamento.</p>
+<h2>O que define o valor de um tratamento de canal</h2>
+<ul><li>Qual é o dente e quantos canais ele tem.</li><li>Se é primeiro tratamento ou retratamento.</li><li>Radiografias e, quando necessário, tomografia.</li><li>Número de sessões.</li><li>A restauração final (resina, bloco ou coroa), normalmente orçada à parte.</li></ul>
+<p>Por norma do Código de Ética Odontológica, preços não são divulgados em publicidade. O orçamento é fechado após exame e radiografia.</p>
+<blockquote>Adiar o canal não faz o problema regredir: a infecção avança e o tratamento fica mais longo.</blockquote>
+<h2>Quando procurar a dentista sem esperar</h2>
+<p>Dor espontânea que piora à noite, dor ao morder, inchaço no rosto ou na gengiva e sensibilidade prolongada ao quente. Em Sinop, a Extreme Odontologia faz a avaliação com hora marcada. Entenda o passo a passo em <a href="tratamento-de-canal-doi.html">tratamento de canal dói?</a>.</p>
+<div class="note">Conteúdo informativo. O número de sessões e o plano de tratamento são definidos após exame clínico e radiográfico.</div>
+"""),
+    dict(slug="dentista-em-sinop-o-que-avaliar", titulo="Dentista em Sinop: o que avaliar antes de marcar a consulta", data="2026-11-10", tempo="4 min",
+         desc="Procurando dentista em Sinop? Veja o que conferir antes de agendar: registro no CRO, avaliação antes do orçamento, biossegurança, localização e canais de contato.",
+         corpo="""
+<p>Quem busca “dentista em Sinop” ou “dentista perto de mim” encontra muitas opções em poucos segundos. Alguns critérios objetivos ajudam a escolher com segurança, qualquer que seja a clínica.</p>
+<h2>1. Registro no Conselho Regional de Odontologia</h2>
+<p>Todo cirurgião-dentista tem inscrição no CRO do estado, e o número deve aparecer na comunicação da clínica. A consulta é pública no site do Conselho Federal de Odontologia.</p>
+<h2>2. Avaliação antes do orçamento</h2>
+<p>Um plano de tratamento sério começa com exame clínico e, quando necessário, radiografia. Desconfie de diagnóstico e preço fechados sem examinar a boca.</p>
+<h2>3. Explicação clara do plano</h2>
+<p>Você deve sair da avaliação sabendo o que será feito, em quantas consultas, quais são as alternativas e o que está incluído no valor.</p>
+<h2>4. Biossegurança</h2>
+<p>Instrumentais esterilizados e embalados, materiais descartáveis abertos na sua frente e ambiente limpo são o mínimo.</p>
+<h2>5. Localização, horário e contato</h2>
+<p>Tratamentos costumam exigir retornos. Clínica de fácil acesso, com horário compatível com a sua rotina e um canal de contato que responde, faz diferença para concluir o tratamento.</p>
+<blockquote>Bom atendimento odontológico é aquele em que você entende o que vai ser feito antes de começar.</blockquote>
+<h2>Sobre a Extreme Odontologia</h2>
+<p>A clínica fica na Rua dos Cedros, 478, Sala 05, no Jardim Botânico, em Sinop/MT, e atende de segunda a sexta, das 8h às 18h, com hora marcada pelo WhatsApp. A responsável técnica é a Dra. Luana Alves de Andrade, CRO-MT 11238. Conheça os <a href="../tratamentos/">tratamentos</a> e veja <a href="../contato.html">como chegar</a>.</p>
+<div class="note">Conteúdo informativo. Este texto não substitui a avaliação clínica.</div>
+"""),
 ]
 
 def page_artigos_index():
