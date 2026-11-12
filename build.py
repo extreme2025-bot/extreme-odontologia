@@ -143,6 +143,17 @@ ARROW = '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
 NAV = [("tratamentos/", "Tratamentos"), ("duvidas.html", "Dúvidas"), ("artigos/", "Artigos"), ("contato.html", "Contato")]
 
+# Tag do Google (Google Ads): mede clique no WhatsApp como conversao; personalizacao de anuncios desligada.
+GADS_ID = "AW-10880997164"
+GADS_WHATS_LABEL = "_hWmCJPtq7cdEKyuu8Qo"
+GTAG = f"""<!-- Google tag (gtag.js): mede cliques no WhatsApp vindos de anuncios do Google Ads; sem publicidade personalizada -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GADS_ID}"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
+gtag('js',new Date());gtag('config','{GADS_ID}',{{'allow_ad_personalization_signals':false}});
+document.addEventListener('click',function(e){{var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me/"],a[href*="api.whatsapp.com"]'):null;if(!a)return;gtag('event','conversion',{{'send_to':'{GADS_ID}/{GADS_WHATS_LABEL}','value':1.0,'currency':'BRL','transport_type':'beacon'}});}},true);
+</script>"""
+
 def head(title, desc, root, path, extra_ld=None, ogimg="img/hero.jpg"):
     canonical = f"{SITE_URL}/{path}".rstrip("/") + ("/" if path.endswith("/") or path == "" else "")
     if path == "": canonical = SITE_URL + "/"
@@ -178,6 +189,7 @@ def head(title, desc, root, path, extra_ld=None, ogimg="img/hero.jpg"):
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{root}css/site.css">
 {ldjson}
+{GTAG}
 </head>
 <body>
 """
@@ -215,7 +227,8 @@ def footer(root):
   <div class="legal">
     <b>Extreme Odontologia Ltda</b> · CNPJ 54.410.614/0001-70{cro_pj}<br>
     Responsável técnica: <b>Dra. Luana Alves de Andrade – Cirurgiã-dentista – CRO-MT 11238</b><br>
-    Este site tem caráter informativo e não substitui a avaliação clínica. Resultados variam de pessoa para pessoa. © {datetime.date.today().year} Extreme Odontologia.
+    Este site tem caráter informativo e não substitui a avaliação clínica. Resultados variam de pessoa para pessoa. © {datetime.date.today().year} Extreme Odontologia.<br>
+    Este site usa a tag do Google para medir cliques no WhatsApp vindos de anúncios, sem publicidade personalizada.
   </div>
 </div></footer>
 <a class="fab" href="{WA_DEFAULT}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">{WA_SVG}<span>Agendar</span></a>
