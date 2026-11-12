@@ -53,6 +53,6 @@ _Atualizado em 09/11/2026, 07:30. Fonte: trabalho feito na sessão com Rafael; i
 ## Conversões e medição (12/11/2026)
 - Metas da campanha no Google Ads: **específicas da campanha** — Leads de chamada, Contatos (chamadas a partir de anúncios) e Ver rota. Antes usava o padrão da conta (e-commerce da Extreme Truck).
 - Ação de conversão criada: **"WhatsApp - Extreme Odonto (site)"** — categoria Contato (site), contagem "Uma", valor padrão R$ 1,00, envio `AW-10880997164/_hWmCJPtq7cdEKyuu8Qo`.
-- No site: a tag do Google (`AW-10880997164`) entra em todas as páginas pelo `build.py` (constante `GTAG`, dentro de `head()`), com personalização de anúncios desligada (`allow_ad_personalization_signals: false`). Um único ouvinte de clique dispara a conversão em qualquer link `wa.me`/`api.whatsapp.com`. O rodapé legal avisa do uso da tag.
+- No site: a tag do Google (`AW-10880997164`) entra em todas as páginas pelo `build.py` (constante `GTAG`, dentro de `head()`), com personalização de anúncios desligada (`allow_ad_personalization_signals: false`) e sem o envio de remarketing no carregamento da página (`send_page_view: false`). Um único ouvinte de clique dispara a conversão em qualquer link `wa.me`/`api.whatsapp.com`. O rodapé legal avisa do uso da tag.
 - Não há banner de consentimento de cookies. Se o jurídico pedir, o ponto de alteração é a constante `GTAG`.
 - Só conta como conversão no Ads o clique no WhatsApp de quem chegou por um anúncio; clique de visita orgânica não entra.

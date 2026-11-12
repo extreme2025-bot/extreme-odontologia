@@ -150,7 +150,7 @@ GTAG = f"""<!-- Google tag (gtag.js): mede cliques no WhatsApp vindos de anuncio
 <script async src="https://www.googletagmanager.com/gtag/js?id={GADS_ID}"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
-gtag('js',new Date());gtag('config','{GADS_ID}',{{'allow_ad_personalization_signals':false}});
+gtag('js',new Date());gtag('config','{GADS_ID}',{{'allow_ad_personalization_signals':false,'send_page_view':false}});
 document.addEventListener('click',function(e){{var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me/"],a[href*="api.whatsapp.com"]'):null;if(!a)return;gtag('event','conversion',{{'send_to':'{GADS_ID}/{GADS_WHATS_LABEL}','value':1.0,'currency':'BRL','transport_type':'beacon'}});}},true);
 </script>"""
 
