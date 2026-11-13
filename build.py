@@ -133,6 +133,19 @@ footer .legal b{color:#e6e1d6;font-weight:600}
 .pill{display:inline-block;background:rgba(201,163,91,.15);color:var(--g800);border:1px solid rgba(201,163,91,.5);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;letter-spacing:.06em}
 .dark .pill{color:var(--gold2)}
 .small{font-size:13.5px;color:var(--muted)}
+/* fotos da clinica */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gallery figure{margin:0;position:relative;border-radius:20px;overflow:hidden;box-shadow:0 18px 36px rgba(23,38,30,.16);background:var(--g900)}
+.gallery img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:54px 18px 16px;background:linear-gradient(transparent,rgba(16,25,15,.88));color:#e8e3d8;font-size:14px;line-height:1.45}
+.gallery figcaption b{display:block;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--gold3);margin-bottom:2px}
+@media(max-width:900px){.gallery{grid-template-columns:1fr 1fr;gap:12px}.gallery figcaption{padding:40px 12px 12px;font-size:13px}.gallery figcaption b{font-size:18px}}
+.page-head.has-photo .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.page-head .ph{position:relative;max-width:390px;justify-self:end;width:100%}
+.page-head .ph img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;box-shadow:0 26px 50px rgba(0,0,0,.4)}
+.page-head .ph::before{content:"";position:absolute;inset:-12px;border:1px solid rgba(201,163,91,.45);border-radius:32px;pointer-events:none}
+@media(max-width:900px){.page-head.has-photo .wrap{grid-template-columns:1fr;gap:34px}.page-head .ph{justify-self:center;max-width:320px}}
 """
 
 WA_SVG = '<svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.5a3.6 3.6 0 0 0 1.7.1c.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.3-.2-.5-.3Z"/></svg>'
@@ -187,7 +200,7 @@ def head(title, desc, root, path, extra_ld=None, ogimg="img/hero.jpg"):
 <link rel="icon" type="image/png" sizes="32x32" href="{root}img/favicon-32.png"><link rel="icon" type="image/png" sizes="64x64" href="{root}img/favicon-64.png"><link rel="apple-touch-icon" href="{root}img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}css/site.css">
+<link rel="stylesheet" href="{root}css/site.css?v=3">
 {ldjson}
 {GTAG}
 </head>
@@ -252,7 +265,7 @@ def cta_final(root, title="Pronto para cuidar do seu sorriso com quem planeja ca
 """
 
 TRATAMENTOS = [
-    dict(slug="limpeza-dental-sinop", nome="Limpeza dental", num="01", kicker="Profilaxia profissional",
+    dict(slug="limpeza-dental-sinop", nome="Limpeza dental", num="01", kicker="Profilaxia profissional", foto="bandeja-profilaxia.jpg", foto_alt="Bandeja com pasta profilática e óculos de proteção no consultório da Extreme Odontologia, em Sinop",
          resumo="Remoção de placa e tártaro, polimento e orientação de higiene. A base de qualquer sorriso saudável — e o ponto de partida do seu plano de cuidado.",
          titulo="Limpeza dental em Sinop", desc_seo="Limpeza dental (profilaxia) em Sinop – MT na Extreme Odontologia: remoção de tártaro, polimento e orientação de higiene com a Dra. Luana Alves, CRO-MT 11238. Agende pelo WhatsApp.",
          intro="A limpeza profissional remove o que a escova e o fio não alcançam: placa endurecida (tártaro), manchas superficiais e biofilme abaixo da linha da gengiva. É um procedimento rápido, confortável e preventivo — evita cáries, gengivite e mau hálito, e protege o investimento em qualquer outro tratamento.",
@@ -264,7 +277,7 @@ TRATAMENTOS = [
          faq=[("Limpeza dói?", "Na maioria dos casos não. Em gengivas inflamadas pode haver sensibilidade; usamos técnica cuidadosa e, se necessário, anestesia tópica."),
               ("De quanto em quanto tempo devo fazer?", "Em geral a cada 6 meses. Quem tem tendência a tártaro, gengivite ou usa aparelho pode precisar de intervalos menores — definimos isso na avaliação."),
               ("Limpeza clareia os dentes?", "Ela remove manchas superficiais e devolve a cor natural do dente, mas não clareia a estrutura. Para clarear, o procedimento indicado é o clareamento dental.")]),
-    dict(slug="clareamento-dental-sinop", nome="Clareamento dental", num="02", kicker="Clareamento profissional",
+    dict(slug="clareamento-dental-sinop", nome="Clareamento dental", num="02", kicker="Clareamento profissional", foto="clareamento-kit.jpg", foto_alt="Moldeiras individuais e gel clareador sobre bandeja espelhada, com a sacola da Extreme Odontologia ao fundo",
          resumo="Protocolos de consultório e supervisionados em casa, com gel de concentração profissional e proteção da gengiva. Resultado natural, sem exageros.",
          titulo="Clareamento dental em Sinop", desc_seo="Clareamento dental profissional em Sinop – MT: protocolo de consultório ou supervisionado, com avaliação prévia e proteção gengival. Extreme Odontologia, Dra. Luana Alves, CRO-MT 11238.",
          intro="O clareamento dental profissional usa géis de peróxido em concentração controlada, aplicados com proteção da gengiva e acompanhamento da dentista. Diferente de produtos de prateleira, ele parte de uma avaliação: cor inicial, presença de restaurações, sensibilidade e expectativa realista para o seu caso.",
@@ -277,7 +290,7 @@ TRATAMENTOS = [
               ("Quanto tempo dura o resultado?", "Varia com hábitos: em média de 1 a 3 anos, com manutenções simples. Café, vinho, refrigerantes escuros e cigarro reduzem a duração."),
               ("Restaurações e próteses clareiam?", "Não. Por isso avaliamos antes: às vezes é preciso trocar uma restauração visível depois do clareamento para igualar a cor."),
               ("Dá sensibilidade?", "Pode ocorrer sensibilidade leve e passageira durante o tratamento. Ajustamos protocolo e usamos dessensibilizantes para manter o conforto.")]),
-    dict(slug="tratamento-de-canal-sinop", nome="Tratamento de canal", num="03", kicker="Endodontia",
+    dict(slug="tratamento-de-canal-sinop", nome="Tratamento de canal", num="03", kicker="Endodontia", foto="consultorio.jpg", foto_alt="Consultório da Extreme Odontologia em Sinop, com a cadeira odontológica ao fundo",
          resumo="Quando a dor chega ao nervo, o canal salva o dente. Diagnóstico preciso, anestesia eficiente e técnica atual para você sair da dor e preservar o seu dente.",
          titulo="Tratamento de canal em Sinop", desc_seo="Tratamento de canal (endodontia) em Sinop – MT: diagnóstico preciso, anestesia confortável e técnica atual para preservar o dente. Extreme Odontologia, Dra. Luana Alves, CRO-MT 11238.",
          intro="O tratamento de canal (endodontia) remove a polpa inflamada ou infectada de dentro do dente, limpa e sela os canais, eliminando a dor e preservando o dente natural. Com anestesia adequada e técnica atual, é um procedimento muito mais confortável do que a fama sugere — e quase sempre melhor do que extrair.",
@@ -331,6 +344,15 @@ def page_index():
   <div><img src="{root}img/ambiente.jpg?v=2" alt="Recepção da Extreme Odontologia em Sinop, com o logotipo dourado na parede verde" loading="lazy" width="960" height="1200" style="aspect-ratio:4/5;object-fit:cover"></div>
 </div></section>
 <section><div class="wrap">
+  <div class="sec-head"><div class="eyebrow">A clínica por dentro</div><h2>Estrutura pensada para o seu cuidado</h2><p class="lead">Fotos reais do nosso consultório, no Jardim Botânico.</p></div>
+  <div class="gallery">
+    <figure><img src="{root}img/consultorio.jpg" alt="Consultório da Extreme Odontologia em Sinop, com cadeira odontológica e bandeja de materiais" loading="lazy" width="960" height="1200"><figcaption><b>Consultório</b>Ambiente reservado, com hora marcada.</figcaption></figure>
+    <figure><img src="{root}img/modelos-planejamento.jpg" alt="Modelos de estudo do sorriso sobre bandeja espelhada, com a marca Extreme Odontologia ao fundo" loading="lazy" width="960" height="1200"><figcaption><b>Planejamento</b>Modelos de estudo para definir cada etapa.</figcaption></figure>
+    <figure><img src="{root}img/plastificadora.jpg" alt="Plastificadora a vácuo com modelo dentário, usada para confeccionar moldeiras na Extreme Odontologia" loading="lazy" width="960" height="1200"><figcaption><b>Sob medida</b>Moldeiras individuais feitas na própria clínica.</figcaption></figure>
+    <figure><img src="{root}img/clareamento-kit.jpg" alt="Moldeiras individuais e gel clareador com a sacola da Extreme Odontologia" loading="lazy" width="960" height="1200"><figcaption><b>Clareamento</b>Protocolo supervisionado, com material profissional.</figcaption></figure>
+  </div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
   <div class="sec-head center"><div class="eyebrow">Como funciona</div><h2>Sua primeira visita, passo a passo</h2></div>
   <div class="steps">
     <div class="step"><h3>Contato</h3><p>Você chama no WhatsApp, conta o que precisa e escolhe o melhor horário.</p></div>
@@ -375,8 +397,9 @@ def page_tratamento(t):
     para = "".join(f"<li>{x}</li>" for x in t["para"])
     faq = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in t["faq"])
     promo_item = t["nome"].lower()
-    body += f"""<div class="page-head"><div class="wrap"><div class="crumbs" style="color:#bdb8ac"><a href="{root}" style="color:#bdb8ac">Início</a> › <a href="{root}tratamentos/" style="color:#bdb8ac">Tratamentos</a> › {t['nome']}</div><div class="eyebrow">{t['kicker']}</div><h1>{t['titulo']}</h1><p>{t['intro']}</p>
-<p style="margin-top:22px"><a class="btn btn-gold" href="{WA_DEFAULT}" target="_blank" rel="noopener">{WA_SVG} Agendar {t['nome'].lower()}</a></p></div></div>
+    body += f"""<div class="page-head has-photo"><div class="wrap"><div><div class="crumbs" style="color:#bdb8ac"><a href="{root}" style="color:#bdb8ac">Início</a> › <a href="{root}tratamentos/" style="color:#bdb8ac">Tratamentos</a> › {t['nome']}</div><div class="eyebrow">{t['kicker']}</div><h1>{t['titulo']}</h1><p>{t['intro']}</p>
+<p style="margin-top:22px"><a class="btn btn-gold" href="{WA_DEFAULT}" target="_blank" rel="noopener">{WA_SVG} Agendar {t['nome'].lower()}</a></p></div>
+<div class="ph"><img src="{root}img/{t['foto']}" alt="{t['foto_alt']}" width="960" height="1200" fetchpriority="high"></div></div></div>
 <section><div class="wrap"><div class="sec-head"><div class="eyebrow">Como é feito</div><h2>Etapas do {t['nome'].lower()} na Extreme</h2></div><div class="steps">{steps}</div></div></section>
 <section class="dark"><div class="wrap split"><div><div class="eyebrow">Indicações</div><h2>Para quem é indicado</h2><ul class="list">{para}</ul><p class="small" style="color:#bdb8ac">A indicação definitiva depende de avaliação clínica. Resultados variam de pessoa para pessoa.</p></div>
 <div><div class="card" style="background:rgba(255,255,255,.04)"><span class="pill">Presente de fim de ano</span><h3 style="margin-top:14px">10% na primeira visita</h3><p>Novos pacientes têm 10% de desconto no {promo_item} agendado até {PROMO_END}. Mediante avaliação; não cumulativo.</p><a class="btn btn-gold" href="{WA_PROMO}" target="_blank" rel="noopener">{WA_SVG} Quero agendar</a></div></div></div></section>
@@ -599,6 +622,11 @@ def page_contato():
     <p style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-gold" href="{WA_DEFAULT}" target="_blank" rel="noopener">{WA_SVG} Chamar no WhatsApp</a><a class="btn btn-line" href="{maps_link}" target="_blank" rel="noopener">{PIN_SVG} Abrir no Google Maps</a></p></div>
   <div><iframe class="map" src="{maps_embed}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Extreme Odontologia, Rua dos Cedros 478, Sinop"></iframe></div>
 </div></section>
+<section class="tight" style="padding-top:0"><div class="wrap"><div class="gallery" style="grid-template-columns:repeat(3,1fr)">
+  <figure><img src="{root}img/ambiente.jpg?v=2" alt="Recepção da Extreme Odontologia em Sinop" loading="lazy" width="960" height="1200"><figcaption><b>Recepção</b>Sala 05, no Jardim Botânico.</figcaption></figure>
+  <figure><img src="{root}img/consultorio.jpg" alt="Consultório da Extreme Odontologia em Sinop" loading="lazy" width="960" height="1200"><figcaption><b>Consultório</b>Atendimento com hora marcada.</figcaption></figure>
+  <figure><img src="{root}img/modelos-planejamento.jpg" alt="Modelos de estudo do sorriso com a marca Extreme Odontologia" loading="lazy" width="960" height="1200"><figcaption><b>Planejamento</b>Cada caso começa por uma avaliação.</figcaption></figure>
+</div></div></section>
 {promo_band(root)}
 """
     body += footer(root)
