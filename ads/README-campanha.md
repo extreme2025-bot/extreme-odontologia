@@ -56,3 +56,11 @@ _Atualizado em 09/11/2026, 07:30. Fonte: trabalho feito na sessão com Rafael; i
 - No site: a tag do Google (`AW-10880997164`) entra em todas as páginas pelo `build.py` (constante `GTAG`, dentro de `head()`), com personalização de anúncios desligada pelo comando `gtag('set','allow_ad_personalization_signals',false)` **antes** do `config` (forma documentada pelo Google). Testado em 12/11/2026: assim os avisos saem com `npa=1` e os envios de remarketing do carregamento da página (`viewthroughconversion`, `rmkt/collect`, `1p-user-list`) deixam de sair; passar a mesma opção dentro do `config` não teve efeito (`npa=0`), e `send_page_view: false` também não. Um único ouvinte de clique dispara a conversão em qualquer link `wa.me`/`api.whatsapp.com`. O rodapé legal avisa do uso da tag.
 - Não há banner de consentimento de cookies. Se o jurídico pedir, o ponto de alteração é a constante `GTAG`.
 - Só conta como conversão no Ads o clique no WhatsApp de quem chegou por um anúncio; clique de visita orgânica não entra.
+
+## 13/11/2026 — segundo anúncio por grupo e fotos originais
+- Criado um segundo anúncio responsivo em cada grupo, com tema diferente do primeiro (textos em `ads/textos_tema2.py`):
+  Dentista Sinop — primeira consulta sem pressa; Clareamento — moldeira sob medida feita na clínica;
+  Limpeza — prevenção e check-up; Canal e dor de dente — preservar o dente.
+- Mesmas URLs finais e caminhos do primeiro anúncio de cada grupo. Descrição da responsável técnica mantida fixada na posição 1.
+- Site: fotos originais da clínica na home (galeria), no topo das páginas de limpeza, clareamento e canal e na página de contato.
+- Recurso de imagem na campanha: tentado com 2 fotos (4 recortes); o Google Ads respondeu "Ocorreu um erro. Tente novamente mais tarde." nas duas tentativas. Não ficou salvo.
